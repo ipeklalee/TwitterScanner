@@ -83,13 +83,13 @@ public class TwitterScanner
 	        @Override
 	        public void onStatus(Status status) 
 	        {    
-	        		//query is ensured with if statement below
-		    		if(!status.getText().contains(companyName))
-		    		{
-		    			return;
-		    		}
-		    		Timestamp creationTs=new Timestamp(status.getCreatedAt().getTime());
-	        		updateOnStatus(creationTs);
+			//query is ensured with if statement below
+			if(!status.getText().contains(companyName))
+			{
+				return;
+			}
+			Timestamp creationTs=new Timestamp(status.getCreatedAt().getTime());
+			updateOnStatus(creationTs);
 	        }
 	        
 	        @Override
