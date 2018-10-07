@@ -5,13 +5,22 @@ import static org.junit.Assert.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Calendar;
+import org.junit.BeforeClass;
 
 import org.junit.Test;
 
 public class TwitterScannerTest {
 
-	TwitterScanner twitterScanner = new TwitterScanner();
-	ArrayList<Timestamp> sampleTimeStamps = new ArrayList<Timestamp>();
+	static TwitterScanner twitterScanner;
+	static ArrayList<Timestamp> sampleTimeStamps;
+	
+	@BeforeClass
+    	public static void setUpBeforeClass() throws Exception 
+	{
+		twitterScanner = new TwitterScanner();
+		sampleTimeStamps = new ArrayList<Timestamp>();
+    	}
+
 	
 	//Check Rate calculation method with the edge conditions 
 	@Test
