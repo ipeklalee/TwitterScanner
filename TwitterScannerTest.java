@@ -76,8 +76,4 @@ public class TwitterScannerTest {
 		assertEquals(120, (long)twitterScanner.numTweetPerCurrHour, 0.1);
 		assertEquals(100, (long)twitterScanner.numTweetPerPastHour, 0.1);
 	}
-
-
-
-
 }
