@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Random;
 
 import org.junit.Test;
 
