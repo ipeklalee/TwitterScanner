@@ -13,7 +13,8 @@ public class TwitterScannerTest {
 
 	TwitterScanner twitterScanner = new TwitterScanner();
 	ArrayList<Timestamp> sampleTimeStamps = new ArrayList<Timestamp>();
-
+	
+	//Check Rate calculation method with the edge conditions 
 	@Test
 	public void testCalculateRate() 
 	{
@@ -27,10 +28,7 @@ public class TwitterScannerTest {
 		assertEquals(100.0,twitterScanner.calculateRate(0, 30), 0.1);
 	} 
 
-
-	//Timestamp arrayin olcak iterate ederken updateonstatus u cagircaksin
-	// 
-
+	//Check on status method with possible two conditions (change in timestamp, no change in timestamp)
 	@Test
 	public void testUpdateOnStatusNoChange() 
 	{
