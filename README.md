@@ -1,6 +1,3 @@
-# TwitterScanner
-Number of mentions of a company on Twitter change over time using Twitter's Streaming API.
-
 # About
 A class implementation that follows messages on [Twitter’s Streaming API](https://developer.twitter.com/en/docs) and counts how often a given company (e.g. “Facebook”) is mentioned. Every hour, the relative change is stored.
 
